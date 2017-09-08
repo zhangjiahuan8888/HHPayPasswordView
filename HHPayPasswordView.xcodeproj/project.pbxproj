@@ -13,6 +13,11 @@
 		C019A3E71F611605003E9B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019A3E51F611605003E9B1A /* Main.storyboard */; };
 		C019A3E91F611605003E9B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C019A3E81F611605003E9B1A /* Assets.xcassets */; };
 		C019A3EC1F611605003E9B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019A3EA1F611605003E9B1A /* LaunchScreen.storyboard */; };
+		C019A3F51F61168C003E9B1A /* HHPayPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C019A3F41F61168C003E9B1A /* HHPayPasswordView.m */; };
+		C019A3F81F612476003E9B1A /* HHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C019A3F71F612476003E9B1A /* HHTextField.m */; };
+		C067CE141F626780009B5572 /* HHPasswordErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C067CE131F626780009B5572 /* HHPasswordErrorView.m */; };
+		C067CE171F628309009B5572 /* PaySuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C067CE161F628309009B5572 /* PaySuccessViewController.m */; };
+		C067CE1A1F6287C2009B5572 /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C067CE191F6287C2009B5572 /* ForgetPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		C019A3E81F611605003E9B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C019A3EB1F611605003E9B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C019A3ED1F611605003E9B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C019A3F31F61168C003E9B1A /* HHPayPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPayPasswordView.h; sourceTree = "<group>"; };
+		C019A3F41F61168C003E9B1A /* HHPayPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPayPasswordView.m; sourceTree = "<group>"; };
+		C019A3F61F612476003E9B1A /* HHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTextField.h; sourceTree = "<group>"; };
+		C019A3F71F612476003E9B1A /* HHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTextField.m; sourceTree = "<group>"; };
+		C067CE121F626780009B5572 /* HHPasswordErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPasswordErrorView.h; sourceTree = "<group>"; };
+		C067CE131F626780009B5572 /* HHPasswordErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPasswordErrorView.m; sourceTree = "<group>"; };
+		C067CE151F628309009B5572 /* PaySuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaySuccessViewController.h; sourceTree = "<group>"; };
+		C067CE161F628309009B5572 /* PaySuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaySuccessViewController.m; sourceTree = "<group>"; };
+		C067CE181F6287C2009B5572 /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		C067CE191F6287C2009B5572 /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +73,15 @@
 		C019A3DB1F611605003E9B1A /* HHPayPasswordView */ = {
 			isa = PBXGroup;
 			children = (
+				C067CE1B1F628C5A009B5572 /* HHPayPasswordView */,
 				C019A3DF1F611605003E9B1A /* AppDelegate.h */,
 				C019A3E01F611605003E9B1A /* AppDelegate.m */,
 				C019A3E21F611605003E9B1A /* ViewController.h */,
 				C019A3E31F611605003E9B1A /* ViewController.m */,
+				C067CE151F628309009B5572 /* PaySuccessViewController.h */,
+				C067CE161F628309009B5572 /* PaySuccessViewController.m */,
+				C067CE181F6287C2009B5572 /* ForgetPasswordViewController.h */,
+				C067CE191F6287C2009B5572 /* ForgetPasswordViewController.m */,
 				C019A3E51F611605003E9B1A /* Main.storyboard */,
 				C019A3E81F611605003E9B1A /* Assets.xcassets */,
 				C019A3EA1F611605003E9B1A /* LaunchScreen.storyboard */,
@@ -77,6 +97,19 @@
 				C019A3DD1F611605003E9B1A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C067CE1B1F628C5A009B5572 /* HHPayPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				C019A3F31F61168C003E9B1A /* HHPayPasswordView.h */,
+				C019A3F41F61168C003E9B1A /* HHPayPasswordView.m */,
+				C067CE121F626780009B5572 /* HHPasswordErrorView.h */,
+				C067CE131F626780009B5572 /* HHPasswordErrorView.m */,
+				C019A3F61F612476003E9B1A /* HHTextField.h */,
+				C019A3F71F612476003E9B1A /* HHTextField.m */,
+			);
+			name = HHPayPasswordView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C067CE171F628309009B5572 /* PaySuccessViewController.m in Sources */,
+				C067CE141F626780009B5572 /* HHPasswordErrorView.m in Sources */,
+				C067CE1A1F6287C2009B5572 /* ForgetPasswordViewController.m in Sources */,
+				C019A3F81F612476003E9B1A /* HHTextField.m in Sources */,
 				C019A3E41F611605003E9B1A /* ViewController.m in Sources */,
 				C019A3E11F611605003E9B1A /* AppDelegate.m in Sources */,
+				C019A3F51F61168C003E9B1A /* HHPayPasswordView.m in Sources */,
 				C019A3DE1F611605003E9B1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +350,7 @@
 				C019A3F21F611605003E9B1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
