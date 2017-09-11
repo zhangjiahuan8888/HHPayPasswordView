@@ -45,7 +45,7 @@
 }
 - (void)setLimit:(NSInteger )limit{
     _limit = limit;
-    self.titleLabel.text = [NSString stringWithFormat:@"支付密码不正确，你还可以输入%d次。",limit];
+    self.titleLabel.text = [NSString stringWithFormat:@"支付密码不正确，你还可以输入%ld次。",limit];
 }
 - (void)showInView:(UIView *)view{
     [view addSubview:self];
