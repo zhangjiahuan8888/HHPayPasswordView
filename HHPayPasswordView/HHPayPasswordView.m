@@ -116,7 +116,6 @@ static CGFloat const kDotWith_height = 10;
     self.tipLabel.text = @"支付成功";
     self.loadingImgView.image = [UIImage imageNamed:@"password_success"];
     [self.loadingImgView.layer removeAllAnimations];
-//    [self hide];
 }
 #pragma mark - 支付失败 密码错误
 - (void)payFailureWithPasswordError:(BOOL)passwordError withErrorLimit:(NSInteger)limit{
@@ -126,13 +125,12 @@ static CGFloat const kDotWith_height = 10;
     }
 }
 
-// // 点击再试一次
+// 点击重新输入
 - (void)clickOnceButton{
     [self.errorView hide];
     self.passwordField.hidden = NO;
     self.passwordField.text = @"";
     [self.passwordField becomeFirstResponder];
-//    [CYNotificationCenter postNotificationName:CYPasswordViewDeleteAllNotification object:@{@"enable":@(NO)}];
 }
 // 点击忘记密码
 - (void)clickForgetPwd{
@@ -142,9 +140,8 @@ static CGFloat const kDotWith_height = 10;
         [_delegate forgetPayPassword];
     }
 }
-#pragma mark == private method
-- (void)addDotsViews
-{
+#pragma mark 
+- (void)addDotsViews{
     //密码输入框的宽度
     CGFloat passwordFieldWidth = CGRectGetWidth(self.passwordField.frame);
     //六等分 每等分的宽度
@@ -169,7 +166,7 @@ static CGFloat const kDotWith_height = 10;
         [self.passwordDotsArray addObject:dotView];
     }
 }
-//将所有的假密码点设置为隐藏状态
+// 将所有的假密码点设置为隐藏状态
 - (void)setDotsViewHidden{
     for (UIView *view in _passwordDotsArray){
         [view setHidden:YES];

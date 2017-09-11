@@ -27,7 +27,7 @@
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     button.layer.borderColor = [UIColor lightGrayColor].CGColor;
     button.layer.borderWidth = 0.5;
-    button.frame = CGRectMake(30, 100, 300, 40);
+    button.frame = CGRectMake(30, 100, [UIScreen mainScreen].bounds.size.width-60, 40);
     [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }

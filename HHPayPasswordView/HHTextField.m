@@ -10,9 +10,7 @@
 
 @implementation HHTextField
 
-//禁止粘贴复制全选等
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
-{
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender{
     UIMenuController *menuController = [UIMenuController sharedMenuController];
     if (menuController) {
         [UIMenuController sharedMenuController].menuVisible = NO;

@@ -45,7 +45,7 @@
 }
 - (void)setLimit:(NSInteger )limit{
     _limit = limit;
-    self.titleLabel.text = [NSString stringWithFormat:@"支付密码不正确，你还可以输入%ld次。",limit];
+    self.titleLabel.text = [NSString stringWithFormat:@"支付密码不正确，你还可以输入%d次。",limit];
 }
 - (void)showInView:(UIView *)view{
     [view addSubview:self];
@@ -80,7 +80,6 @@
         _onceButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_onceButton setTitle:@"重新输入" forState:UIControlStateNormal];
         [_onceButton setTitleColor:[UIColor colorWithRed:39/255.f green:136/255.f blue:255/255.f alpha:1] forState:UIControlStateNormal];
-//        _onceButton.backgroundColor = [UIColor colorWithRed:39/255.f green:136/255.f blue:255/255.f alpha:1];//39,136,255
         _onceButton.titleLabel.font = [UIFont boldSystemFontOfSize:14];
         _onceButton.layer.cornerRadius = 5;
     }
@@ -94,7 +93,6 @@
         _forgetPwdButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_forgetPwdButton setTitle:@"忘记密码" forState:UIControlStateNormal];
         [_forgetPwdButton setTitleColor:[UIColor colorWithRed:39/255.f green:136/255.f blue:255/255.f alpha:1] forState:UIControlStateNormal];
-//        _forgetPwdButton.backgroundColor = [UIColor colorWithRed:39/255.f green:136/255.f blue:255/255.f alpha:1];//[UIColor blueColor];
         _forgetPwdButton.titleLabel.font = [UIFont systemFontOfSize:14];
         _forgetPwdButton.layer.cornerRadius = 5;
     }
